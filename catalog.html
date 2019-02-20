@@ -8,25 +8,83 @@
   <body>
     <header class="site-header">
       <nav class="site-navigation">
-        <a class="header-logo" href="index.html>
+        <a class="header-logo" href="index.html" aria-label="Переход на главную страницу студии Нёрдс">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
         <ul class="navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li class="curent"><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li>
+            <a href="studio.html">Студия</a>
+          </li>
+          <li>
+            <a href="clients.html">Клиенты</a>
+          </li>
+          <li class="curent">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
         </ul>
         <ul class="cart">
-          <li>Корзина<li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input type="radio" name="product-group" id="filter-adaptive-layout" value="adaptive">
+                  <label for="filter-adaptive-layout">Адаптивная</label>
+                </li>
+                <li class="filter-option">
+                  <input type="radio" name="product-group" id="filter-fixed-layout" value="fixed">
+                  <label for="filter-fixed-layout">Фиксированная</label>
+                </li>
+                <li class="filter-option">
+                  <input type="radio" name="product-group" id="filter-elastic-layout" value="elastic">
+                  <label for="filter-elastic-layout">Резиновая</label>
+                </li>
+              </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input type="checkbox" name="slaider" id="filter-slaider" checked>
+                  <label for="filter-slaider">Слайдер</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" name="block-of-features" id="filter-block-of-features">
+                  <label for="filter-block-of-features">Блок преимуществ</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" name="galery" id="filter-galery">
+                  <label for="filter-galery">Галерея</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" name="cart" id="filter-cart">
+                  <label for="filter-cart">Корзина</cart>
+                </li>
+              </ul>
+          </fieldset>
+          <button type="submit" class="filter-button">Показать</button>
+        </form>
+      </section>
 
       <section class="catalog">
         <h2 class="visually hidden">Каталог товаров</h2>
@@ -34,7 +92,7 @@
           <li>
             <img src="img/maket-sedona.jpg" width="360" height="576" alt="Макет Sedona">
             <div class="catalog-item-description">
-              <a href="#">
+              <a href="#" aria-label="Демонстрация макета Sedona">
                 Sedona
               </a>
               <p>Информационный сайт для туристов</p>
@@ -42,9 +100,9 @@
             </div>
           </li>
           <li>
-            <img src="img/maket-pink.jpg" width="360" height="576" alt="Макет Pink">
+            <img src="img/maket-pink.jpg" width="360" height="576" alt="Макет Pink App">
             <div class="catalog-item-description">
-              <a href="#">
+              <a href="#" aria-label="Демонстрация макета Pink App">
                 Pink App
               </a>
               <p>Продуктовый лединг приложения для iOS и Android</p>
@@ -54,7 +112,7 @@
           <li>
             <img src="img/maket-barbershop.jpg" width="360" height="576" alt="Макет Barbershop Borodinski">
             <div class="catalog-item-description">
-              <a href="#">
+              <a href="#" aria-label="Демонстрация макета Barbershop Borodinski">
                 Barbershop
               </a>
               <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -64,7 +122,7 @@
           <li>
             <img src="img/maket-mishka.jpg" width="360" height="576" alt="Макет Mishka">
             <div class="catalog-item-description">
-              <a href="#">
+              <a href="#" aria-label="Демонстрация макета Mishka">
                 Mishka
               </a>
               <p>Интернет-магазин вязаных игрушек</p>
@@ -74,7 +132,7 @@
           <li>
             <img src="img/maket-aplus.jpg" width="360" height="576" alt="Макет A Plus">
             <div class="catalog-item-description">
-              <a href="#">
+              <a href="#" aria-label="Демонстрация макета A Plus">
                 A Plus
               </a>
               <p>Лединг курсов повышения квалификации</p>
@@ -84,7 +142,7 @@
           <li>
             <img src="img/maket-kvast.jpg" width="360" height="576" alt="Макет Кваст">
             <div class="catalog-item-description">
-              <a href="#">
+              <a href="#" aria-label="Демонстрация макета Кваст">
                 Кваст
               </a>
               <p>Промо-сайт производителя крафтового кваса</p>
@@ -93,13 +151,39 @@
           </li>
         </ul>
       </section>
+
+      <section class="connection">
+        <b>Напишите нам</b>
+        <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="client-name">Ваше имя:</label>
+            <input type="text" name="name" id="client-name" value="" placeholder="Имя Фамилия">
+          </div>
+          <div>
+            <label for="client-email">Ваш e-mail:</label>
+            <input type="email" name="email" id="client-email" value="" placeholder="email@example.com">
+          </div>
+          <div>
+            <label for="client-comments">Текст письма:</label>
+            <input type="text" name="comments" id="client-comments" value="" placeholder="В свободной форме">
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="close-form">Закрыть<button>
+      </section>
     </main>
 
     <footer class="site-footer">
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li>
+          <a class="social-button" href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Инстаграм</a>
+        </li>
       </ul>
       <p>
         <b>Давайте дружить, это выгодно!</b>
