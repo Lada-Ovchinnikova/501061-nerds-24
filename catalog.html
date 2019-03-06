@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -43,7 +46,7 @@
             <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
-                  <input type="radio" name="product-group" id="filter-adaptive-layout" value="adaptive">
+                  <input type="radio" name="product-group" id="filter-adaptive-layout" value="adaptive" checked>
                   <label for="filter-adaptive-layout">Адаптивная</label>
                 </li>
                 <li class="filter-option">
@@ -92,7 +95,7 @@
           <li>
             <img src="img/maket-sedona.jpg" width="360" height="576" alt="Макет Sedona">
             <div class="catalog-item-description">
-              <a href="#" aria-label="Демонстрация макета Sedona">
+              <a class="maket-name" href="#" aria-label="Демонстрация макета Sedona">
                 Sedona
               </a>
               <p>Информационный сайт для туристов</p>
@@ -102,7 +105,7 @@
           <li>
             <img src="img/maket-pink.jpg" width="360" height="576" alt="Макет Pink App">
             <div class="catalog-item-description">
-              <a href="#" aria-label="Демонстрация макета Pink App">
+              <a class="maket-name" href="#" aria-label="Демонстрация макета Pink App">
                 Pink App
               </a>
               <p>Продуктовый лединг приложения для iOS и Android</p>
@@ -112,7 +115,7 @@
           <li>
             <img src="img/maket-barbershop.jpg" width="360" height="576" alt="Макет Barbershop Borodinski">
             <div class="catalog-item-description">
-              <a href="#" aria-label="Демонстрация макета Barbershop Borodinski">
+              <a class="maket-name" href="#" aria-label="Демонстрация макета Barbershop Borodinski">
                 Barbershop
               </a>
               <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -122,7 +125,7 @@
           <li>
             <img src="img/maket-mishka.jpg" width="360" height="576" alt="Макет Mishka">
             <div class="catalog-item-description">
-              <a href="#" aria-label="Демонстрация макета Mishka">
+              <a class="maket-name" href="#" aria-label="Демонстрация макета Mishka">
                 Mishka
               </a>
               <p>Интернет-магазин вязаных игрушек</p>
@@ -132,7 +135,7 @@
           <li>
             <img src="img/maket-aplus.jpg" width="360" height="576" alt="Макет A Plus">
             <div class="catalog-item-description">
-              <a href="#" aria-label="Демонстрация макета A Plus">
+              <a class="maket-name" href="#" aria-label="Демонстрация макета A Plus">
                 A Plus
               </a>
               <p>Лединг курсов повышения квалификации</p>
@@ -142,7 +145,7 @@
           <li>
             <img src="img/maket-kvast.jpg" width="360" height="576" alt="Макет Кваст">
             <div class="catalog-item-description">
-              <a href="#" aria-label="Демонстрация макета Кваст">
+              <a class="maket-name" href="#" aria-label="Демонстрация макета Кваст">
                 Кваст
               </a>
               <p>Промо-сайт производителя крафтового кваса</p>
@@ -155,21 +158,21 @@
       <section class="connection">
         <b>Напишите нам</b>
         <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
-          <div>
+          <div class="connection-item">
             <label for="client-name">Ваше имя:</label>
-            <input type="text" name="name" id="client-name" value="" placeholder="Имя Фамилия">
+            <input type="text" name="name" id="client-name" placeholder="Имя Фамилия">
           </div>
-          <div>
+          <div class="connection-item">
             <label for="client-email">Ваш e-mail:</label>
-            <input type="email" name="email" id="client-email" value="" placeholder="email@example.com">
+            <input type="email" name="email" id="client-email" placeholder="email@example.com">
           </div>
-          <div>
+          <div class="connection-item">
             <label for="client-comments">Текст письма:</label>
-            <input type="text" name="comments" id="client-comments" value="" placeholder="В свободной форме">
+            <input type="text" name="comments" id="client-comments" placeholder="В свободной форме">
           </div>
           <button class="button" type="submit">Отправить</button>
         </form>
-        <button class="close-form">Закрыть<button>
+        <button class="close-form" type="button">Закрыть<button>
       </section>
     </main>
 
@@ -185,7 +188,7 @@
           <a class="social-button" href="#">Инстаграм</a>
         </li>
       </ul>
-      <p>
+      <p class="advantages">
         <b>Давайте дружить, это выгодно!</b>
         Скидка 10% для друзей из социальных сетей.
       </p>

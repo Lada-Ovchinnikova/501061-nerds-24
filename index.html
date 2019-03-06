@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="site-header">
@@ -17,7 +20,9 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="cart">
-          <li>Корзина<li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,17 +36,17 @@
          <li class="features-item">
            <h3>Веб-сайты</h3>
            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-           <a class="button" href="#">Заказать</a>
+           <a class="button button-web" href="#">Заказать</a>
          </li>
          <li class="features-item">
            <h3>Приложения</h3>
            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-           <a class="button" href="#">Заказать</a>
+           <a class="button button-app" href="#">Заказать</a>
          </li>
          <li class="features-item">
            <h3>Презентации</h3>
            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-           <a class="button" href="#">Заказать</a>
+           <a class="button button-presentation" href="#">Заказать</a>
          </li>
        </ul>
      </section>
@@ -49,31 +54,35 @@
      <section class="connection">
         <b>Напишите нам</b>
         <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
-          <div>
+          <div class="connection-item">
             <label for="client-name">Ваше имя:</label>
-            <input type="text" name="name" id="client-name" value="" placeholder="Имя Фамилия">
+            <input type="text" name="name" id="client-name" placeholder="Имя Фамилия">
           </div>
-          <div>
+          <div class="connection-item">
             <label for="client-email">Ваш e-mail:</label>
-            <input type="email" name="email" id="client-email" value="" placeholder="email@example.com">
+            <input type="email" name="email" id="client-email" placeholder="email@example.com">
           </div>
-          <div>
+          <div class="connection-item">
             <label for="client-comments">Текст письма:</label>
-            <input type="text" name="comments" id="client-comments" value="" placeholder="В свободной форме">
+            <input type="text" name="comments" id="client-comments" placeholder="В свободной форме">
           </div>
           <button class="button" type="submit">Отправить</button>
         </form>
-        <button class="close-form">Закрыть<button>
+        <button class="close-form" type="button">Закрыть<button>
       </section>
     </main>
 
     <footer class="site-footer">
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li>
+          <a class="social-button" href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Фейсбук</a>
+        </li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
-      <p>
+      <p class="advantages">
         <b>Давайте дружить, это выгодно!</b>
         Скидка 10% для друзей из социальных сетей.
       </p>
